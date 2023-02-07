@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>    
+    <form action="#" id="form" class="form">
+        <H1>log_In</H1>
+        <input type="email" name="email" id="email">
+        <input type="password" name="password" id="password">
+        <button id="send">send</button>
+    </form>
+    <div class="users"></div>
+    <script type="text/template" id="user_temp">
+        <div class="user">
+            <p class="first_name">{{id}}</p>
+            <p class="last_name">{{first_name}}</p>
+            <p class="avatar">{{last_name}}</p>
+            <p class="email_inp">{{email}}</p>
+            <input class="firstname_value d_none" type="text" value="{{first_name}}">
+            <input class="lastname_value d_none"  type="text" value="{{last_name}}">
+            <input class="emailvalue d_none"  type="text" value="{{email}}">
+            <input class="avatarvalue d_none"  type="text" value="{{avatar}}">
+            <button class="save d_none">save</button>
+            <img class="avatar" src="{{avatar}}" alt="{{first_name}} {{last_name}}">
+            <div>
+                <button class="edit">change</button>
+                <button class="delete">delete</button>
+            </div>
+        </div>
+    </script>
+</body>
+</html>
